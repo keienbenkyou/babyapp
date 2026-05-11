@@ -1,0 +1,11 @@
+html, body { height: 100%; }
+body { -webkit-tap-highlight-color: transparent; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.btn { @apply px-4 py-2 rounded-lg font-medium transition active:scale-95; }
+.card { @apply bg-white rounded-2xl shadow-sm border border-slate-200 p-4; }
+.tab-active { @apply bg-violet-600 text-white; }
+.pulse-amber { animation: pulse-amber 1.5s ease-in-out infinite; }
+.pulse-red { animation: pulse-red 1s ease-in-out infinite; }
+@keyframes pulse-amber { 0%,100% { background-color:#fef3c7; } 50% { background-color:#fde68a; } }
+@keyframes pulse-red   { 0%,100% { background-color:#fee2e2; } 50% { background-color:#fecaca; } }
+input, select, textarea { font-size: 16px; } /* prevent iOS zoom on focus */
+.scroll-y { overflow-y: auto; -webkit-overflow-scrolling: touch; }
